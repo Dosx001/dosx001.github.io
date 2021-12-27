@@ -8,8 +8,8 @@ const Navbar = () => {
         <a href='/' id='main'>Andres Rodriguez Michel</a>
         <a href="/Projects">Projects</a>
         <a href="/Education">Education</a>
-        <a href="/Workflow">Workflow</a>
         <a href="/Interests">Interests</a>
+        <a href="/Workflow">Workflow</a>
       </nav>
     </>
   );

@@ -1,0 +1,27 @@
+aside {
+    position: absolute;
+    padding: 1rem;
+    background: black;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    border: gray solid 2px;
+    box-shadow: 5px 5px 20px black;
+}
+img {
+    border-radius: 50%;
+    border: gray solid 2px;
+    height: 15rem;
+    padding: 5px;
+}
+svg {
+    fill: darkgrey;
+    height: 1.25rem;
+}
+a:hover > svg {
+   fill: darkred;
+   height: 2rem;
+}
+a:hover {
+    font-size: 2rem;
+}
