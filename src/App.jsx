@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className="content">
+      <div id="content">
       </div>
     </>
   );

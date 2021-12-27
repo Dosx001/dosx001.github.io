@@ -5,10 +5,14 @@
 }
 
 html {
-    width: 50%;
-    margin: auto;
     background: #181a1b;
+    scroll-padding-top: 3rem;
+    padding-top: 3rem;
 }
 a {
     text-decoration: none;
+}
+#content {
+    margin: auto;
+    width: 50%;
 }

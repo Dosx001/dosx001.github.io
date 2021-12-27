@@ -10,13 +10,13 @@ nav > a {
 }
 nav, #nav-background {
     top: 0;
+    left: 0;
+    right: 0;
     position: fixed
 }
 #nav-background {
-    width: 100%;
     background: black;
     height: 3.5rem;
-    left: 0;
 }
 #main {
     color: white;
