@@ -1,6 +1,6 @@
 #!/bin/bash
 cd src
-vim -p SideBar.css Navbar.css App.css \
-    "+vs SideBar.jsx | tabn" \
-    "+vs Navbar.jsx | tabn" \
+vim -p components/SideBar.css components/Navbar.css App.css \
+    "+vs components/SideBar.jsx | tabn" \
+    "+vs components/Navbar.jsx | tabn" \
     "+vs App.jsx | tabm 0" \
