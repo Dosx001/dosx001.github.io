@@ -18,10 +18,10 @@ svg {
     fill: darkgrey;
     height: 1.25rem;
 }
-a:hover > svg {
+.sideTag:hover {
+    font-size: 2rem;
+}
+.sideTag:hover > svg {
    fill: darkred;
    height: 2rem;
-}
-a:hover {
-    font-size: 2rem;
 }
