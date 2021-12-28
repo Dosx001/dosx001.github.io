@@ -3,10 +3,9 @@ nav {
     margin: auto;
     width: 50%;
     font-size: 1.25rem;
-    height: 2rem;
-}
-nav > a {
-    padding-right: 10px;
+    a {
+        padding-right: 10px;
+    }   height: 2rem;
 }
 nav, #nav-background {
     top: 0;

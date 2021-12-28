@@ -19,9 +19,9 @@ p {
 }
 a {
     text-decoration: none;
-}
-a:hover, #main:hover {
-    color: darkred;
+    &:hover {
+        color: darkred !important;
+    }
 }
 iframe {
     height: 14rem;

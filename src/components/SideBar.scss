@@ -19,10 +19,12 @@ svg {
     fill: darkgrey;
     height: 1.25rem;
 }
-.sideTag:hover {
-    font-size: 2rem;
-}
-.sideTag:hover > svg {
-   fill: darkred;
-   height: 2rem;
+.sideTag {
+    &:hover {
+        font-size: 2rem;
+        svg {
+            fill: darkred;
+            height: 2rem;
+        }
+    }
 }
