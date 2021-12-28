@@ -11,12 +11,22 @@ html {
 }
 h1 {
     border-bottom: 1px solid;
+    padding-left: 2rem;
+}
+p {
+    width: 90%;
+    margin: auto;
 }
 a {
     text-decoration: none;
 }
 a:hover, #main:hover {
     color: darkred;
+}
+iframe {
+    height: 14rem;
+    width: 100%;
+    border: none;
 }
 #content {
     margin: auto;

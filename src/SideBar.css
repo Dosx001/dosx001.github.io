@@ -1,5 +1,5 @@
 aside {
-    position: absolute;
+    position: fixed;
     padding: 1rem;
     background: black;
     border-radius: 5px;
@@ -12,6 +12,7 @@ img {
     border-radius: 50%;
     border: gray solid 2px;
     height: 15rem;
+    width: 15rem;
     padding: 5px;
 }
 svg {

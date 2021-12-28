@@ -24,7 +24,7 @@ const SideBar = () => {
         <a className="sideTag" target="_blank" href="/resume.pdf">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M16 0h-14v24h20v-18l-6-6zm0 3l3 3h-3v-3zm-12 19v-20h10v6h6v14h-16z"/>
-            <path stroke='darkgrey' stroke-width='7%' d="m6 12h12m-12 3h12m-12 3h12"/>
+            <path stroke='darkgrey' strokeWidth='7%' d="m6 12h12m-12 3h12m-12 3h12"/>
           </svg>
           Resume
         </a>
