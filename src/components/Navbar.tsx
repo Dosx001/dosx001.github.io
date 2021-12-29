@@ -1,15 +1,16 @@
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <>
-      <div id='nav-background'></div>
+      <div id='nav-background'/>
       <nav>
-        <a href='/' id='main'>Andres Rodriguez Michel</a>
-        <a href="/Projects">Projects</a>
-        <a href="/Education">Education</a>
-        <a href="/Interests">Interests</a>
-        <a href="/Workflow">Workflow</a>
+        <Link to='/' id='main'>Andres Rodriguez Michel</Link>
+        <Link to="/Projects">Projects</Link>
+        <Link to="/Education">Education</Link>
+        <Link to="/Interests">Interests</Link>
+        <Link to="/Workflow">Workflow</Link>
       </nav>
     </>
   );
