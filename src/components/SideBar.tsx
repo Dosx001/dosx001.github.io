@@ -3,7 +3,7 @@ import './SideBar.scss'
 const SideBar = () => {
   return (
     <aside>
-      <img src="/profile.jpg" alt="" />
+      <img id="profile" src="/profile.jpg" alt="" />
       <div>
         <a className="sideTag" target="_blank" rel="noreferrer" href="https://github.com/Dosx001/">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
