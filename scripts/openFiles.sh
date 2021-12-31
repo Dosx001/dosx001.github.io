@@ -1,7 +1,8 @@
 #!/bin/bash
 cd src
 if [ $# == 0 ]; then
-    vim -p App.scss pages/Projects.tsx pages/Education.tsx pages/Interests.tsx pages/Workflow.tsx \
+    vim -p App.scss pages/Home.tsx pages/Projects.tsx pages/Education.tsx pages/Interests.tsx \
+        pages/Workflow.tsx \
         "+vs App.tsx"
 elif [ $1 == 'c' ]; then
     vim -p components/SideBar.scss components/Navbar.scss components/PostList.scss \
