@@ -12,12 +12,13 @@ aside {
 svg {
     fill: darkgrey;
     height: 1.25rem;
+    margin-right: 5px;
 }
 .sideTag {
     &:hover {
         font-size: 2rem;
         svg {
-            fill: darkred;
+            fill: crimson;
             height: 2rem;
         }
     }

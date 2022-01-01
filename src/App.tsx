@@ -1,6 +1,7 @@
 import './App.scss';
 import Navbar from './components/Navbar';
 import SideBar from './components/SideBar';
+import GitHubFeed from './components/GitHubFeed';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Navbar/>
       <SideBar/>
+      <GitHubFeed/>
       <div id="content">
         <Routes>
           <Route path='/' element={<Home/>}/>
