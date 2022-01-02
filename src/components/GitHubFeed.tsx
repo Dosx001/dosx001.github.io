@@ -59,17 +59,26 @@ const GitHubFeed = () => {
     return `https://github.com/${event.repo.name}`
   }
 
-  useEffect(() => {
+  const fetcher = () => {
     fetch("https://api.github.com/users/Dosx001/events")
-      .then(res => res.json())
-      .then(data => {
+    .then(res => res.json())
+    .then(data => {
         setIsLoaded(true);
         setEvents(data);
       },
       error => {
         setIsLoaded(true);
         setError(error);
-      })
+      }
+    )
+  }
+
+  useEffect(() => {
+    fetcher()
+    const interval = setInterval(() => {
+      fetcher()
+    }, 60000);
+    return () => clearInterval(interval);
   }, [])
 
   if (error) {
