@@ -10,6 +10,7 @@
     img {
         margin: 1rem auto;
         height: 500px;
+        width:auto;
         border: gray solid 2px;
         box-shadow: 5px 5px 20px black;
         background: black;
@@ -22,6 +23,8 @@
     svg {
         height: 2rem;
         margin: 0 5px;
+        border-radius: 50%;
+        box-shadow: 4px 4px 10px black;
         fill: black;
         stroke: darkred;
         stroke-width: 2px;

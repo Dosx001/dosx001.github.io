@@ -1,15 +1,30 @@
 import ImageSlider from '../components/ImageSlider';
+import * as imgs from '../imgs/Education';
 
 const Education = () => {
-  const imgs = [
-    "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/1920px-Cal_Poly_Mustangs_logo.svg.png",
-    "https://www.paulrwilliamsproject.org/site_files/images/Woodrow_Wilson_High_001_2_3_4_5_fused.jpg"
-  ]
   return (
-    <div className="post">
-      <h1>School</h1>
-      <ImageSlider imgs={imgs}/>
-    </div>
+    <>
+      <div className="post">
+        <h1>California Polytechnic State University</h1>
+        <h2>Beamforming Elevated Array for COsmic Neutrinos (BEACON)</h2>
+        <ImageSlider imgs={imgs.beacon}/>
+        <h2>Imagen y Espíritu Ballet Folklórico de Cal Poly</h2>
+        <ImageSlider imgs={imgs.folk}/>
+        <h2>Chess Club</h2>
+        <ImageSlider imgs={imgs.chess}/>
+        <h2>MEXA</h2>
+        <ImageSlider imgs={imgs.mexa}/>
+      </div>
+      <div className="post">
+        <h1>Woodrow Wilson High School</h1>
+        <h2>AVID</h2>
+        <ImageSlider imgs={imgs.avid}/>
+        <h2>Student Run Los Angeles</h2>
+        <ImageSlider imgs={imgs.srla}/>
+        <h2>Science Club</h2>
+        <ImageSlider imgs={imgs.sci}/>
+      </div>
+    </>
   );
 }
 
