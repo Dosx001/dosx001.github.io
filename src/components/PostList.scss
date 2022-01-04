@@ -5,4 +5,21 @@
     padding: 0px 10px 20px;
     margin: 20px 0px;
     box-shadow: 5px 5px 20px black;
+    * {
+        margin: auto;
+    }
+    a, iframe {
+        display: block
+    }
+    a, p {
+        width: 85%;
+    }
+    h1 {
+        width: 100%;
+        padding-left: 3.5rem;
+        margin-bottom: 10px;
+    }
+    h2, iframe {
+        width: 90%;
+    }
 }

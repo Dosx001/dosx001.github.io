@@ -5,10 +5,10 @@ if [ $# == 0 ]; then
         pages/Workflow.tsx \
         "+vs App.tsx"
 elif [ $1 == 'c' ]; then
-    vim -p components/GitHubFeed.scss components/ImageSlider.scss components/SideBar.scss components/Navbar.scss components/PostList.scss \
+    vim -p components/PostList.scss components/Project.tsx components/GitHubFeed.scss components/ImageSlider.scss components/SideBar.scss components/Navbar.scss \
+        "+vs components/PostList.tsx | tabn | tabn" \
         "+vs components/GitHubFeed.tsx | tabn" \
         "+vs components/ImageSlider.tsx | tabn" \
         "+vs components/SideBar.tsx | tabn" \
-        "+vs components/Navbar.tsx | tabn" \
-        "+vs components/PostList.tsx | tabm 0"
+        "+vs components/Navbar.tsx | tabfirst"
 fi
