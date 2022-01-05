@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Project from '../components/Project';
-import ProjectSelector from '../components/ProjectSelector';
+import Project from 'components/Project';
+import ProjectSelector from 'components/ProjectSelector';
 
 const projs = [
   {

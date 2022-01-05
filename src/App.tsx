@@ -1,13 +1,13 @@
-import './App.scss';
-import Navbar from './components/Navbar';
-import SideBar from './components/SideBar';
-import GitHubFeed from './components/GitHubFeed';
+import 'App.scss';
+import Navbar from 'components/Navbar';
+import SideBar from 'components/SideBar';
+import GitHubFeed from 'components/GitHubFeed';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Education from './pages/Education';
-import Interests from './pages/Interests';
-import Workflow from './pages/Workflow';
+import Home from 'pages/Home';
+import Projects from 'pages/Projects';
+import Education from 'pages/Education';
+import Interests from 'pages/Interests';
+import Workflow from 'pages/Workflow';
 
 function App() {
   return (
