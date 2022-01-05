@@ -3,14 +3,10 @@
     font-family: "Segoe UI";
     color: darkgrey;
 }
-
 html {
     background: #181a1b;
     scroll-padding-top: 3rem;
     padding-top: 3rem;
-}
-h1 {
-    border-bottom: 1px solid;
 }
 a {
     text-decoration: none;
@@ -18,6 +14,33 @@ a {
     &:hover {
         color: crimson !important;
     }
+}
+button {
+    background: black;
+    font-size: 1rem;
+    border: 2px grey solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    margin: 0rem 5px;
+    svg {
+        fill: none;
+        stroke: darkred;
+        stroke-width: 3px;
+        height: 2rem;
+    }
+    &:active {
+        background: #484848;
+    }
+    &:hover {
+        color: crimson;
+        svg {
+            stroke: crimson;
+        }
+        cursor: pointer;
+    }
+}
+h1 {
+    border-bottom: 1px solid;
 }
 iframe {
     height: 14rem;
@@ -28,6 +51,9 @@ img {
     width: 80%;
     margin: auto;
     display: block;
+}
+.buttons {
+    text-align: center;
 }
 #content {
     margin: auto;
