@@ -1,5 +1,5 @@
 import ImageSlider from 'components/ImageSlider';
-import * as imgs from 'imgs/Education';
+import { imgs } from 'const/Education';
 
 const Education = () => {
   return (
