@@ -30,3 +30,17 @@ svg {
     width: 15rem;
     padding: 5px;
 }
+@media screen and (max-width: 1800px) {
+    aside {
+        margin-left: .5rem;
+    }
+    #profile {
+        width: 11rem;
+        height: 11rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    aside {
+        display: none;
+    }
+}
