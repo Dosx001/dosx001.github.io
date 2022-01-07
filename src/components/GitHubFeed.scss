@@ -1,6 +1,7 @@
 .datetime {
     font-size: 1rem;
     color: dimgrey;
+    display: inline;
 }
 .event {
     border-bottom: 1px solid darkgrey;
@@ -10,9 +11,13 @@
     margin-right: 1rem;
     height: 85vh;
     width: 18%;
+    a {
+        display: block;
+    }
     h2 {
         margin: 0;
         padding: 0;
+        display: inline;
     }
     svg {
         height: 2rem;
@@ -21,4 +26,27 @@
 #scroll {
     overflow: auto;
     height: 95%;
+}
+@media screen and (max-width: 1800px) {
+    #git {
+        font-size: 1rem;
+        svg {
+            height: 1.5rem;
+        }
+    }
+}
+@media screen and (max-width: 1500px) {
+    #git {
+        h2 {
+            display: none;
+        }
+        .datetime {
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    #git {
+        display: none;
+    }
 }
