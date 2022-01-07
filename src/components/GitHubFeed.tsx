@@ -24,11 +24,17 @@ const GitHubFeed = () => {
   const formatDate = (datetime:string) => {
     let date = new Date(datetime)
     let min: number|string = date.getMinutes();
-    if (min < 10) min = "0" + min.toString();
-    let hour: number = date.getHours() + 1;
-    let time = 12 < hour ?
-      `${hour - 12}:${min} PM`:
-      `${hour}:${min} AM`
+    if (min < 10) min = `0${min}`
+    let hour = date.getHours();
+    let time: string;
+    if (hour === 0)
+      time = `12:${min} AM`
+    else if (hour < 12)
+      time = `${hour}:${min} AM`
+    else if (hour === 12)
+      time = `12:${min} PM`
+    else
+      time = `${hour - 12}:${min} PM`
     return `Date: ${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear() - 2000} Time: ${time}`
   }
 
