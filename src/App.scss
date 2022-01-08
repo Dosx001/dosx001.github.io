@@ -42,11 +42,6 @@ button {
 h1 {
     border-bottom: 1px solid;
 }
-iframe {
-    height: 14rem;
-    width: 100%;
-    border: none;
-}
 img {
     width: 80%;
     margin: auto;
@@ -54,6 +49,9 @@ img {
 }
 .buttons {
     text-align: center;
+}
+.stats {
+    width: 60%;
 }
 #content {
     margin: auto;
@@ -65,6 +63,9 @@ img {
     }
 }
 @media screen and (max-width: 1200px) {
+    .stats {
+        width: 90%;
+    }
     #content {
         width: 90%;
     }

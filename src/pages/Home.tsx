@@ -10,9 +10,9 @@ const Home = () => {
       <PostList posts={posts}/>
       <div className="post">
         <h1>GitHub Stats</h1>
-        <iframe title="Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dosx001&langs_count=10&layout=compact&title_color=fff&text_color=00e7ff&bg_color=151515"/>
-        <iframe title="Stats" src="https://github-readme-stats.vercel.app/api/?username=Dosx001&count_private=true&include_all_commits=true&show_icons=true&title_color=fff&icon_color=00e7ff&text_color=9f9f9f&bg_color=151515"/>
-        <iframe title="Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Dosx001&theme=black-ice"/>
+        <img className="stats" title="Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dosx001&langs_count=10&layout=compact&title_color=a9a9a9&text_color=a9a9a9&bg_color=000000&border_color=808080"/>
+        <img className="stats" title="Stats" src="https://github-readme-stats.vercel.app/api/?username=Dosx001&count_private=true&include_all_commits=true&show_icons=true&title_color=a9a9a9&icon_color=00e7ff&text_color=9f9f9f&bg_color=000000&border_color=808080"/>
+        <img className="stats" title="Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Dosx001&theme=black-ice&currStreakNum=9a9a9a&sideNums=9a9a9a&sideLabels=9a9a9a&stroke=9a9a9a&background=000000&border=808080"/>
       </div>
     </>
   );
