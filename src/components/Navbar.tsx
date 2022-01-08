@@ -1,16 +1,37 @@
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Navbar = () => {
+  useEffect(() => {
+    window.matchMedia('(min-width: 800px)').addListener(() => {
+      document.getElementById('nav')!.style.display = ''
+    })
+  }, [])
+
+  const menu = () => {
+    let nav = document.getElementById('nav')!
+    nav.style.display = nav.style.display === "" ? "grid" : ""
+  }
+
+  const clear = () => {
+    document.getElementById('nav')!.style.display = ""
+  }
+
   return (
     <>
       <div id='nav-background'/>
       <nav>
-        <Link to='/' id='main'>Andres Rodriguez Michel</Link>
-        <Link to="/Projects">Projects</Link>
-        <Link to="/Education">Education</Link>
-        <Link to="/Interests">Interests</Link>
-        <Link to="/Workflow">Workflow</Link>
+        <Link onClick={clear} to='/' id='main'>Andres Rodriguez Michel</Link>
+        <div id="nav">
+          <Link onClick={clear} to="/Projects" >Projects</Link>
+          <Link onClick={clear} to="/Education">Education</Link>
+          <Link onClick={clear} to="/Interests">Interests</Link>
+          <Link onClick={clear} to="/Workflow">Workflow</Link>
+        </div>
+        <svg id="menu" viewBox="0 0 50 30" onClick={menu}>
+          <path d="M4 5h42M4 15h42M4 25h42"/>
+        </svg>
       </nav>
     </>
   );

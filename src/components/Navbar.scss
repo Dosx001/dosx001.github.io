@@ -7,6 +7,26 @@ nav {
         padding-right: 10px;
         color: darkgrey;
     }
+    svg {
+        stroke: darkgrey;
+        stroke-width: 5px;
+        stroke-linecap: round;
+        position: absolute;
+        right: 0;
+        top: .5rem;
+        border: 1px darkgrey solid;
+        border-radius: 5px;
+        padding: 5px;
+        height: 2rem;
+        display: none;
+        &:hover {
+            cursor: pointer;
+            stroke: crimson;
+        }
+        &:active {
+            background: gray;
+        }
+    }
 }
 nav, #nav-background {
     top: 0;
@@ -23,6 +43,9 @@ nav, #nav-background {
     font-size: 1.5rem;
     padding-right: 15px;
 }
+#nav {
+    display: inline;
+}
 @media screen and (max-width: 1920px) {
     nav {
         width: 60%;
@@ -31,5 +54,19 @@ nav, #nav-background {
 @media screen and (max-width: 1200px) {
     nav {
         width: 90%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #nav {
+        display: none;
+        background: black;
+        padding: 5px;
+        border: 2px darkgrey solid;
+        border-radius: 20px;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    svg {
+        display: inline !important;
     }
 }
