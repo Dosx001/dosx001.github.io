@@ -19,6 +19,19 @@ const ImageSlider = ({imgs}: Imgs) => {
 
   return (
     <div className='slider'>
+      <div>
+        <button onClick={prevImg}>
+          <svg viewBox="0 0 30 30">
+            <path d="M22 8l-13 7l13 7"/>
+          </svg>
+        </button>
+        <span>{current + 1} of {length}</span>
+        <button onClick={nextImg}>
+          <svg viewBox="0 0 30 30">
+            <path d="M8 8l13 7l-13 7"/>
+          </svg>
+        </button>
+      </div>
       {imgs.map((img, index) => {
         return (
           <div key={index}>
@@ -26,17 +39,6 @@ const ImageSlider = ({imgs}: Imgs) => {
           </div>
         );
       })}
-      <div>
-        <svg viewBox="0 0 30 30" onClick={prevImg}>
-          <circle cx="15" cy="15" r="14"/>
-          <path d="M22 8l-13 7l13 7"/>
-        </svg>
-        <span>{current + 1} of {length}</span>
-        <svg viewBox="0 0 30 30" onClick={nextImg}>
-          <circle cx="15" cy="15" r="14"/>
-          <path d="M8 8l13 7l-13 7"/>
-        </svg>
-      </div>
     </div>
   );
 };
