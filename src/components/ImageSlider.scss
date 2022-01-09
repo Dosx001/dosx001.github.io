@@ -1,9 +1,9 @@
+@import 'base';
 .slider {
   width: 90%;
   margin: auto;
+  @extend %box;
   background: #350202;
-  border: 2px solid grey;
-  border-radius: 10px;
   div {
     text-align: center;
     margin-top: .75rem;
@@ -13,9 +13,7 @@
     height: auto;
     width: auto;
     max-height: 500px;
-    border: gray solid 2px;
-    box-shadow: 5px 5px 20px black;
-    background: black;
+    @extend %box;
   }
   span {
     font-size: 1rem;

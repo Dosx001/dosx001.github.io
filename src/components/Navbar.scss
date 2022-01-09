@@ -1,72 +1,72 @@
+@import 'base';
 nav {
-    padding-top: .5rem;
-    margin: auto;
-    width: 50%;
-    font-size: 1.25rem;
-    a {
-        padding-right: 10px;
-        color: darkgrey;
+  padding-top: .5rem;
+  margin: auto;
+  width: 50%;
+  font-size: 1.25rem;
+  a {
+    padding-right: 10px;
+    color: darkgrey;
+  }
+  svg {
+    stroke: darkgrey;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    position: absolute;
+    right: 0;
+    top: .5rem;
+    @extend %box;
+    padding: 5px;
+    height: 2rem;
+    display: none;
+    &:hover {
+      cursor: pointer;
+      stroke: crimson;
     }
-    svg {
-        stroke: darkgrey;
-        stroke-width: 5px;
-        stroke-linecap: round;
-        position: absolute;
-        right: 0;
-        top: .5rem;
-        border: 1px darkgrey solid;
-        border-radius: 5px;
-        padding: 5px;
-        height: 2rem;
-        display: none;
-        &:hover {
-            cursor: pointer;
-            stroke: crimson;
-        }
-        &:active {
-            background: gray;
-        }
+    &:active {
+      background: gray;
     }
+  }
 }
 nav, #nav-background {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
 }
 #nav-background {
-    background: black;
-    height: 3.5rem;
+  background: black;
+  height: 3.5rem;
 }
 #main {
-    color: white;
-    font-size: 1.5rem;
-    padding-right: 15px;
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 15px;
 }
 #nav {
-    display: inline;
+  display: inline;
 }
 @media screen and (max-width: 1920px) {
-    nav {
-        width: 60%;
-    }
+  nav {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 1200px) {
-    nav {
-        width: 90%;
-    }
+  nav {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 800px) {
-    #nav {
-        display: none;
-        background: black;
-        padding: 5px;
-        border: 2px darkgrey solid;
-        border-radius: 20px;
-        margin-top: 1.5rem;
-        text-align: center;
-    }
-    svg {
-        display: inline !important;
-    }
+  #nav {
+    display: none;
+    background: black;
+    padding: 5px;
+    border: 2px darkgrey solid;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  svg {
+    display: inline !important;
+  }
 }

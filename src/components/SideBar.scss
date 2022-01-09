@@ -1,46 +1,44 @@
+@import 'base';
 aside {
-    position: fixed;
-    top: 5rem;
-    padding: 1rem;
-    background: black;
-    border-radius: 5px;
-    font-size: 1.25rem;
-    margin-left: 1rem;
-    border: gray solid 2px;
-    box-shadow: 5px 5px 20px black;
+  @extend %box;
+  position: fixed;
+  top: 5rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  margin-left: 1rem;
 }
 svg {
-    fill: darkgrey;
-    height: 1.25rem;
-    margin-right: 5px;
+  fill: darkgrey;
+  height: 1.25rem;
+  margin-right: 5px;
 }
 .sideTag {
-    &:hover {
-        font-size: 2rem;
-        svg {
-            fill: crimson;
-            height: 2rem;
-        }
+  &:hover {
+    font-size: 2rem;
+    svg {
+      fill: crimson;
+      height: 2rem;
     }
+  }
 }
 #profile {
-    border-radius: 50%;
-    border: gray solid 2px;
-    height: 15rem;
-    width: 15rem;
-    padding: 5px;
+  border-radius: 50%;
+  border: gray solid 2px;
+  height: 15rem;
+  width: 15rem;
+  padding: 5px;
 }
 @media screen and (max-width: 1800px) {
-    aside {
-        margin-left: .5rem;
-    }
-    #profile {
-        width: 11rem;
-        height: 11rem;
-    }
+  aside {
+    margin-left: .5rem;
+  }
+  #profile {
+    width: 11rem;
+    height: 11rem;
+  }
 }
 @media screen and (max-width: 1200px) {
-    aside {
-        display: none;
-    }
+  aside {
+    display: none;
+  }
 }

@@ -1,3 +1,4 @@
+@import 'base';
 *, ::after, ::before {
   box-sizing: border-box;
   font-family: "Segoe UI";
@@ -16,11 +17,8 @@ a {
   }
 }
 button {
-  background: black;
+  @extend %box;
   font-size: 1rem;
-  border: 2px grey solid;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px black;
   margin: 0rem 5px;
   svg {
     fill: none;

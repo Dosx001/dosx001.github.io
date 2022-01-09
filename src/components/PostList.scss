@@ -1,21 +1,19 @@
+@import 'base';
 .post {
-  background: black;
-  border: 2px solid grey;
-  border-radius: 10px;
+  @extend %box;
   padding: 0px 10px 20px;
   margin: 20px 0px;
-  box-shadow: 5px 5px 20px black;
   * {
     margin: auto;
   }
   a {
     display: block
   }
-  img {
-    width: 60%;
-  }
   a, p {
     width: 85%;
+  }
+  img {
+    width: 60%;
   }
   h1 {
     width: 100%;
