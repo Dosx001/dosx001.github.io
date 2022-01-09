@@ -1,25 +1,38 @@
 import './PostList.scss';
 
+interface Content {
+  tag: string,
+  inner?: string,
+  title?: string,
+  src?: string,
+  className?: string
+}
+
 interface Posts {
   posts: {
-    key: number,
     title: string,
-    body?: string,
-    img?: string,
-    imgs?: string[]
+    content: Content[]
   }[]
 }
 
-const PostList = (props:Posts) => {
+const PostList = (props: Posts) => {
+  const postIt = (content: Content, index: number) => {
+    switch (content.tag) {
+       case "p":
+        return <p key={index}>{content.inner}</p>
+       case "img":
+         return <img key={index} src={content.src}/>
+    }
+    return ""
+  }
   return(
     <>
-      {props.posts.map(post => (
-        <div className="post" key={post.key}>
+      {props.posts.map((post, i) => (
+        <div className="post" key={i}>
           <h1>{post.title}</h1>
-          {post.img &&
-            <img src={post.img} alt=""/>
-          }
-          <p>{post.body}</p>
+          {post.content.map((content, j) => (
+              postIt(content, j)
+          ))}
         </div>
       ))}
     </>

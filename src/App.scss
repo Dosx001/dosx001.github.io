@@ -1,72 +1,66 @@
 *, ::after, ::before {
-    box-sizing: border-box;
-    font-family: "Segoe UI";
-    color: darkgrey;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+  color: darkgrey;
 }
 html {
-    background: #181a1b;
-    scroll-padding-top: 3rem;
-    padding-top: 3rem;
+  background: #181a1b;
+  scroll-padding-top: 3rem;
+  padding-top: 3rem;
 }
 a {
-    text-decoration: none;
-    color: darkred;
-    &:hover {
-        color: crimson !important;
-    }
+  text-decoration: none;
+  color: darkred;
+  &:hover {
+    color: crimson !important;
+  }
 }
 button {
-    background: black;
-    font-size: 1rem;
-    border: 2px grey solid;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px black;
-    margin: 0rem 5px;
+  background: black;
+  font-size: 1rem;
+  border: 2px grey solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+  margin: 0rem 5px;
+  svg {
+    fill: none;
+    stroke: darkred;
+    stroke-width: 3px;
+    height: 2rem;
+  }
+  &:active {
+    background: #484848;
+  }
+  &:hover {
+    color: crimson;
     svg {
-        fill: none;
-        stroke: darkred;
-        stroke-width: 3px;
-        height: 2rem;
+      stroke: crimson;
     }
-    &:active {
-        background: #484848;
-    }
-    &:hover {
-        color: crimson;
-        svg {
-            stroke: crimson;
-        }
-        cursor: pointer;
-    }
+    cursor: pointer;
+  }
 }
 h1 {
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
 img {
-    width: 80%;
-    margin: auto;
-    display: block;
+  width: 80%;
+  margin: auto;
+  display: block;
 }
 .buttons {
-    text-align: center;
-}
-.stats {
-    width: 60%;
+  text-align: center;
 }
 #content {
-    margin: auto;
-    width: 50%;
+  margin: auto;
+  width: 50%;
 }
 @media screen and (max-width: 1920px) {
-    #content {
-        width: 60%;
-    }
+  #content {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 1200px) {
-    .stats {
-        width: 90%;
-    }
-    #content {
-        width: 90%;
-    }
+  #content {
+    width: 90%;
+  }
 }
