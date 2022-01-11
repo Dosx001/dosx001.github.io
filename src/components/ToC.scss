@@ -1,0 +1,36 @@
+@import 'base';
+#table {
+  @extend %box;
+  display: none;
+  float: right;
+  font-size: 1.5rem;
+  * {
+    padding: 2px 5px;
+  }
+  *:not(:last-child) {
+    border-bottom: 2px solid grey;
+  }
+}
+#toc {
+  position: fixed;
+  width: 49%;
+  float: right;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  button {
+    float: right;
+  }
+  &:hover {
+    stroke: crimson;
+  }
+}
+@media screen and (max-width: 1920px) {
+  #toc {
+    width: 59%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #toc {
+    width: 90%;
+  }
+}

@@ -4,6 +4,7 @@ const Interests = () => {
   const posts = [
     {
       title: "Programming",
+      id: "programming",
       content: [
         {
           tag: "p",
@@ -13,6 +14,7 @@ const Interests = () => {
     },
     {
       title: "Vim",
+      id: "vim",
       content: [
         {
           tag: "p",
@@ -22,6 +24,7 @@ const Interests = () => {
     },
     {
       title: "Linux",
+      id: "linux",
       content: [
         {
           tag: "p",
@@ -31,6 +34,7 @@ const Interests = () => {
     },
     {
       title: "Anime",
+      id: "anime",
       content: [
         {
           tag: "p",
@@ -40,6 +44,7 @@ const Interests = () => {
     },
     {
       title: "Gaming",
+      id: "gaming",
       content: [
         {
           tag: "p",

@@ -1,52 +1,56 @@
 .datetime {
-    font-size: 1rem;
-    color: dimgrey;
-    display: inline;
+  font-size: 1rem;
+  color: dimgrey;
+  display: inline;
 }
 .event {
-    border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
 }
 #git {
-    right: 0;
-    margin-right: 1rem;
-    height: 85vh;
-    width: 18%;
-    a {
-        display: block;
-    }
-    h2 {
-        margin: 0;
-        padding: 0;
-        display: inline;
-    }
-    svg {
-        height: 2rem;
-    }
+  right: 0;
+  margin-right: 1rem;
+  height: 85vh;
+  width: 18%;
+  a {
+    display: block;
+  }
+  b {
+    font-size: 1.9rem;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  svg {
+    height: 2rem;
+  }
 }
 #scroll {
-    overflow: auto;
-    height: 95%;
+  overflow: auto;
+  height: 95%;
 }
 @media screen and (max-width: 1800px) {
-    #git {
-        font-size: 1rem;
-        svg {
-            height: 1.5rem;
-        }
+  #git {
+    font-size: 1rem;
+    b {
+      font-size: 1.5rem;
     }
+    svg {
+      height: 1.5rem;
+    }
+  }
 }
 @media screen and (max-width: 1500px) {
-    #git {
-        h2 {
-            display: none;
-        }
-        .datetime {
-            display: block;
-        }
+  #git {
+    b {
+      display: none;
     }
+    .datetime {
+      display: block;
+    }
+  }
 }
 @media screen and (max-width: 1200px) {
-    #git {
-        display: none;
-    }
+  #git {
+    display: none;
+  }
 }

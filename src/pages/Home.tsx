@@ -4,6 +4,7 @@ const Home = () => {
   const posts = [
     {
       title: "Welcome!",
+      id: "welcome",
       content: [
         {
           tag: "p",
@@ -13,6 +14,7 @@ const Home = () => {
     },
     {
       title: "About Me",
+      id: "about-me",
       content: [
         {
           tag: "p",
@@ -22,6 +24,7 @@ const Home = () => {
     },
     {
       title: "GitHub Stats",
+      id: "github-stats",
       content: [
         {
           tag: "img",
