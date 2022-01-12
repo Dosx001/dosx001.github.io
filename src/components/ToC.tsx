@@ -35,6 +35,7 @@ const ToC = () => {
         </svg>
       </button>
       <div id="table">
+        <span>Table of Contents</span>
         {headers.map((hder, index) => (
           <a className={hder.tag === "H2" ? "h2-table" : ""}href={hder.id} onClick={toggle} key={index}>
             {hder.text}
