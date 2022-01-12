@@ -24,10 +24,10 @@ const Navbar = () => {
       <nav>
         <Link onClick={clear} to='/' id='main'>Andres Rodriguez Michel</Link>
         <div id="nav">
-          <Link onClick={clear} to="/Projects" >Projects</Link>
-          <Link onClick={clear} to="/Education">Education</Link>
-          <Link onClick={clear} to="/Interests">Interests</Link>
-          <Link onClick={clear} to="/Workflow">Workflow</Link>
+          <Link onClick={clear} to="/projects" >Projects</Link>
+          <Link onClick={clear} to="/education">Education</Link>
+          <Link onClick={clear} to="/interests">Interests</Link>
+          <Link onClick={clear} to="/workflow">Workflow</Link>
         </div>
         <svg id="menu" viewBox="0 0 50 30" onClick={menu}>
           <path d="M4 5h42M4 15h42M4 25h42"/>

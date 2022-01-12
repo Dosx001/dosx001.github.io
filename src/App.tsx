@@ -8,6 +8,7 @@ import Projects from 'pages/Projects';
 import Education from 'pages/Education';
 import Interests from 'pages/Interests';
 import Workflow from 'pages/Workflow';
+import NotFound from 'pages/NotFound';
 
 function App() {
   return (
@@ -18,10 +19,11 @@ function App() {
       <div id="content">
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/Projects' element={<Projects/>}/>
-          <Route path='/Education' element={<Education/>}/>
-          <Route path='/Interests' element={<Interests/>}/>
-          <Route path='/Workflow' element={<Workflow/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/education' element={<Education/>}/>
+          <Route path='/interests' element={<Interests/>}/>
+          <Route path='/workflow' element={<Workflow/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </div>
     </Router>
