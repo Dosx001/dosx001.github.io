@@ -35,7 +35,7 @@ const ImageSlider = ({imgs}: Imgs) => {
       {imgs.map((img, index) => {
         return (
           <div key={index}>
-            {index === current && (<img src={img}/>)}
+            {index === current && (<img src={img} alt=""/>)}
           </div>
         );
       })}

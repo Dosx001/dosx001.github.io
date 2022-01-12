@@ -26,7 +26,7 @@ const PostList = (props: Posts) => {
       case "p":
         return <p key={index}>{content.inner}</p>
       case "img":
-        return <img key={index} src={content.src}/>
+        return <img key={index} src={content.src} alt=""/>
       case "h2":
         return <h2 key={index} id={content.id}>{content.inner}</h2>
       case "slider":
