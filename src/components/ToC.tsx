@@ -36,7 +36,7 @@ const ToC = () => {
       </button>
       <div id="table">
         {headers.map((hder, index) => (
-          <a href={hder.id} onClick={toggle} key={index}>
+          <a className={hder.tag === "H2" ? "h2-table" : ""}href={hder.id} onClick={toggle} key={index}>
             {hder.text}
           </a>
         ))}

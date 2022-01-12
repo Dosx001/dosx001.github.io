@@ -1,30 +1,86 @@
-import ImageSlider from 'components/ImageSlider';
+import PostList from 'components/PostList';
 import { imgs } from 'const/Education';
 
 const Education = () => {
+  const posts = [
+    {
+      title: "California Polytechnic State University",
+      id: "cal-ploy",
+      content: [
+        {
+          tag: "h2",
+          id: "beacon",
+          inner: "Beamforming Elevated Array for COsmic Neutrinos (BEACON)"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.beacon
+        },
+        {
+          tag: "h2",
+          id: "folk",
+          inner: "Imagen y Espíritu Ballet Folklórico de Cal Poly"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.folk
+        },
+        {
+          tag: "h2",
+          id: "chess",
+          inner: "Chess Club"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.chess
+        },
+        {
+          tag: "h2",
+          id: "mexa",
+          inner: "MEXA"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.mexa
+        },
+      ]
+    },
+    {
+      title: "Woodrow Wilson High School",
+      id: "wilson",
+      content: [
+        {
+          tag: "h2",
+          id: "avid",
+          inner: "AVID"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.avid
+        },
+        {
+          tag: "h2",
+          id: "srla",
+          inner: "Student Run Los Angeles"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.srla
+        },
+        {
+          tag: "h2",
+          id: "science",
+          inner: "Science Club"
+        },
+        {
+          tag: "slider",
+          imgs: imgs.sci
+        },
+      ]
+    },
+  ]
   return (
-    <>
-      <div className="post">
-        <h1>California Polytechnic State University</h1>
-        <h2>Beamforming Elevated Array for COsmic Neutrinos (BEACON)</h2>
-        <ImageSlider imgs={imgs.beacon}/>
-        <h2>Imagen y Espíritu Ballet Folklórico de Cal Poly</h2>
-        <ImageSlider imgs={imgs.folk}/>
-        <h2>Chess Club</h2>
-        <ImageSlider imgs={imgs.chess}/>
-        <h2>MEXA</h2>
-        <ImageSlider imgs={imgs.mexa}/>
-      </div>
-      <div className="post">
-        <h1>Woodrow Wilson High School</h1>
-        <h2>AVID</h2>
-        <ImageSlider imgs={imgs.avid}/>
-        <h2>Student Run Los Angeles</h2>
-        <ImageSlider imgs={imgs.srla}/>
-        <h2>Science Club</h2>
-        <ImageSlider imgs={imgs.sci}/>
-      </div>
-    </>
+    <PostList posts={posts}/>
   );
 }
 

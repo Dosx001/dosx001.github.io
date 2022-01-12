@@ -1,5 +1,6 @@
 import './PostList.scss';
 import ToC from 'components/ToC';
+import ImageSlider from './ImageSlider';
 
 interface Content {
   tag: string,
@@ -7,7 +8,8 @@ interface Content {
   inner?: string,
   title?: string,
   src?: string,
-  className?: string
+  className?: string,
+  imgs?: string[]
 }
 
 interface Posts {
@@ -27,6 +29,8 @@ const PostList = (props: Posts) => {
         return <img key={index} src={content.src}/>
       case "h2":
         return <h2 key={index} id={content.id}>{content.inner}</h2>
+      case "slider":
+        return <ImageSlider key={index} imgs={content.imgs!}/>
     }
     return ""
   }
