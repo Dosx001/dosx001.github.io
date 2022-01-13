@@ -5,8 +5,9 @@ export const posts = [
     content: [
       {
         tag: "p",
-        inner: "Welcome to my website, build using React and hosted by GitHub pages. This site\
-          is designed to introduce myself by showcasing my background and interests. So have a\
+        inner: "Welcome to my website, build using React and hosted by GitHub pages. This site is\
+          relatively new and still a work in progress. I designed this site to\
+          introduce myself by showcasing my background and interests. So have a\
           look around and get to know me."
       }
     ],
@@ -18,7 +19,19 @@ export const posts = [
       {
         tag: "p",
         inner: "Hello, my name is Andres Rodriguez Michel. I am a Cal Poly graduate with a\
-          bachelor in Physics. I currently looking for work in software related fields."
+          bachelor in Physics. During my senior year I took a few computer science courses and\
+          fell in love with programming. My passionate for programming soon thrust into the world\
+          of Vim and Linux. Since then I have teaching myself various of technologies and creating\
+          a multitude of projects. You can checkout these projects on my GitHub or here at"
+      },
+      {
+        tag: "a",
+        href: "https://dosx001.github.io/projects",
+        inner: "dosx001.github.io/projects"
+      },
+      {
+        tag: "p",
+        inner: "I am currently looking for work in software related fields."
       }
     ]
   },

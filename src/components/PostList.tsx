@@ -8,6 +8,7 @@ interface Content {
   inner?: string,
   title?: string,
   src?: string,
+  href?: string,
   className?: string,
   imgs?: string[]
 }
@@ -23,6 +24,8 @@ interface Posts {
 const PostList = (props: Posts) => {
   const postIt = (content: Content, index: number) => {
     switch (content.tag) {
+      case "a":
+        return <a href={content.href}>{content.inner}</a>
       case "p":
         return <p key={index}>{content.inner}</p>
       case "img":
