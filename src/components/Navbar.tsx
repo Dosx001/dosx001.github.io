@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav>
         <Link onClick={clear} to='/' id='main'>Andres Rodriguez Michel</Link>
         <div id="nav">
-          <Link onClick={clear} to="/projects" >Projects</Link>
+          <Link onClick={clear} to="/projects/1" >Projects</Link>
           <Link onClick={clear} to="/education">Education</Link>
           <Link onClick={clear} to="/interests">Interests</Link>
           <Link onClick={clear} to="/workflow">Workflow</Link>

@@ -1,29 +1,21 @@
-import { useState } from 'react';
 import Project from 'components/Project';
-import ProjectSelector from 'components/ProjectSelector';
 import { projs } from 'const/Projects';
+import { useParams } from 'react-router-dom';
+import NotFound from './NotFound';
 
 const Projects = () => {
-  const [current, setCurrent] = useState(0);
-  const ProjSel = {
-    current: current,
-    setCurrent: setCurrent,
-    length: projs.length
+  const { route } = useParams() as {
+    route: string;
   }
-
-  return (
-    <>
-      <ProjectSelector {...ProjSel}/>
-      {projs.map((proj, index) => {
-        return(
-          <div key={index}>
-            {index === current && (<Project {...proj}/>)}
-          </div>
-        )
-      })}
-      <ProjectSelector {...ProjSel}/>
-    </>
-  );
+  let proj = projs[parseInt(route) - 1]
+  if (proj) return (
+    <Project {...proj}/>
+  )
+  proj = projs.find(proj => proj.url === route)
+  if (proj) return (
+    <Project {...proj}/>
+  )
+  return <NotFound/>
 }
 
 export default Projects;
