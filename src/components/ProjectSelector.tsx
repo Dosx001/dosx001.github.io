@@ -1,30 +1,27 @@
 import './ProjectSelector.scss';
-import { Dispatch, SetStateAction } from "react";
+import { useNavigate } from 'react-router-dom';
 
-interface ProjSel {
-  current: number,
-  setCurrent: Dispatch<SetStateAction<number>>,
-  length: number
-}
 
-const ProjectSelector = ({current, setCurrent, length}:ProjSel) => {
+const ProjectSelector = ({index, length}: {index: number, length: number}) => {
+  const navigate = useNavigate();
+
   const nextProj = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    navigate(`../projects/${index === length - 1 ? 1 : index + 2}`)
   };
 
   const prevProj = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    navigate(`../projects/${index === 0 ? length : index }`)
   };
 
   const chProj = (e:React.MouseEvent<HTMLButtonElement>) => {
-    setCurrent(parseInt((e.target as HTMLButtonElement).innerText) - 1)
+    navigate(`../projects/${parseInt((e.target as HTMLButtonElement).innerText)}`)
   }
 
   const buttons = () => {
     let btns = [];
     for (let i = 0; i < length; i++)
       btns.push(
-        <button onClick={chProj} className={current === i ? 'proj' : ''} key={i}>{i + 1}</button>
+        <button onClick={chProj} className={index === i ? 'proj' : ''} key={i}>{i + 1}</button>
       )
     return btns
   }
