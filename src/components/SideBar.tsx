@@ -2,8 +2,8 @@ import './SideBar.scss'
 
 const SideBar = () => {
   return (
-    <aside>
-      <img id="profile" src="/profile.jpg" alt="" />
+    <div id="profile">
+      <img src="/profile.jpg" alt="" />
       <div>
         <a className="sideTag" target="_blank" rel="noreferrer" href="https://github.com/Dosx001/">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -35,7 +35,7 @@ const SideBar = () => {
         </svg>
         Los Angeles
       </div>
-    </aside>
+    </div>
   );
 }
 

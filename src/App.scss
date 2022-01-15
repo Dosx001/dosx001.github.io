@@ -16,6 +16,9 @@ a {
     color: crimson !important;
   }
 }
+aside {
+  position: fixed;
+}
 button {
   @extend %box;
   font-size: 1rem;
@@ -52,12 +55,21 @@ img {
   margin: auto;
   width: 50%;
 }
+#rightSide {
+  right: 1rem;
+}
 @media screen and (max-width: 1920px) {
+  aside {
+    width: 18%;
+  }
   #content {
     width: 60%;
   }
 }
 @media screen and (max-width: 1200px) {
+  aside {
+    display: none;
+  }
   #content {
     width: 90%;
   }

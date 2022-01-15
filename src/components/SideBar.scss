@@ -1,44 +1,31 @@
 @import 'base';
-aside {
+.sideTag {
+  &:hover {
+    svg {
+      fill: crimson !important;
+    }
+  }
+}
+#profile {
   @extend %box;
-  position: fixed;
-  top: 5rem;
   padding: 1rem;
   font-size: 1.25rem;
-  margin-left: 1rem;
+  img {
+    border-radius: 50%;
+    border: gray solid 2px;
+    height: 15rem;
+    width: 15rem;
+    padding: 5px;
+  }
   svg {
     fill: darkgrey;
     height: 1.25rem;
     margin-right: 5px;
   }
 }
-.sideTag {
-  &:hover {
-    font-size: 2rem;
-    svg {
-      fill: crimson;
-      height: 2rem;
-    }
-  }
-}
-#profile {
-  border-radius: 50%;
-  border: gray solid 2px;
-  height: 15rem;
-  width: 15rem;
-  padding: 5px;
-}
 @media screen and (max-width: 1800px) {
-  aside {
-    margin-left: .5rem;
-  }
-  #profile {
+  #profile img {
     width: 11rem;
     height: 11rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  aside {
-    display: none;
   }
 }

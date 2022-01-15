@@ -14,8 +14,10 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <SideBar/>
-      <GitHubFeed/>
+      <aside id="rightSide">
+        <SideBar/>
+        <GitHubFeed/>
+      </aside>
       <div id="content">
         <Routes>
           <Route path='/' element={<Home/>}/>

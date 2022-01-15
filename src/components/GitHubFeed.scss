@@ -1,3 +1,4 @@
+@import 'base';
 .datetime {
   font-size: 1rem;
   color: dimgrey;
@@ -7,10 +8,10 @@
   border-bottom: 1px solid darkgrey;
 }
 #git {
-  right: 0;
-  margin-right: 1rem;
-  height: 85vh;
-  width: 18%;
+  @extend %box;
+  height: 50vh;
+  padding: 1rem 1rem 2rem;
+  margin-top: 1rem;
   a {
     display: block;
   }
@@ -21,7 +22,9 @@
     display: inline;
   }
   svg {
+    margin-right: 5px;
     height: 2rem;
+    fill: darkgrey;
   }
 }
 #scroll {
@@ -31,6 +34,7 @@
 @media screen and (max-width: 1800px) {
   #git {
     font-size: 1rem;
+    height: 57vh;
     b {
       font-size: 1.5rem;
     }
@@ -47,10 +51,5 @@
     .datetime {
       display: block;
     }
-  }
-}
-@media screen and (max-width: 1200px) {
-  #git {
-    display: none;
   }
 }
