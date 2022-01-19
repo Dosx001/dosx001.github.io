@@ -5,8 +5,10 @@
 }
 #table {
   @extend %box;
-  display: none;
-  float: right;
+  position: fixed;
+  display: grid;
+  width: 24%;
+  left: 1rem;
   font-size: 1.5rem;
   * {
     padding: 2px 5px;
@@ -14,27 +16,19 @@
   *:not(:last-child) {
     border-bottom: 2px solid grey;
   }
-}
-#toc {
-  position: fixed;
-  width: 49%;
-  float: right;
-  stroke-linecap: round;
-  stroke-width: 3px;
-  button {
-    float: right;
-  }
-  &:hover {
-    stroke: crimson;
+  a {
+    &:active {
+      background: #484848;
+    }
   }
 }
 @media screen and (max-width: 1920px) {
-  #toc {
-    width: 59%;
+  #table {
+    width: 18%;
   }
 }
 @media screen and (max-width: 1200px) {
-  #toc {
-    width: 90%;
+  #table {
+    display: none;
   }
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import './ToC.scss';
 
 interface Header {
@@ -9,6 +10,9 @@ interface Header {
 
 const ToC = () => {
   const [headers, setHeader] = useState<Header[]>([]);
+  const { route } = useParams() as {
+    route: string;
+  }
 
   useEffect(() => {
     let hders: Header[] = []
@@ -20,29 +24,17 @@ const ToC = () => {
       })
     })
     setHeader(hders);
-  }, [])
-
-  const toggle = () => {
-    let table = document.getElementById('table')!
-    table.style.display = table.style.display === "" ? "grid" : ""
-  }
+  }, [route])
 
   return (
-    <div id="toc">
-      <button onClick={toggle}>
-        <svg viewBox="0 0 24 24">
-          <path d="M2 6h1m5 0h14M2 12h1m5 0h14M2 18h1m5 0h14"/>
-        </svg>
-      </button>
-      <div id="table">
-        <span>Table of Contents</span>
-        {headers.map((hder, index) => (
-          <a className={hder.tag === "H2" ? "h2-table" : ""}href={hder.id} onClick={toggle} key={index}>
-            {hder.text}
-          </a>
-        ))}
-      </div>
-    </div>
+    <aside id="table">
+      <span>Table of Contents</span>
+      {headers.map((hder, index) => (
+        <a className={hder.tag === "H2" ? "h2-table" : ""}href={hder.id} key={index}>
+          {hder.text}
+        </a>
+      ))}
+    </aside>
   )
 }
 

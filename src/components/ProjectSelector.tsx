@@ -27,19 +27,21 @@ const ProjectSelector = ({index, length}: {index: number, length: number}) => {
   }
 
   return (
-    <div className="buttons">
-      <button onClick={prevProj}>
-        <svg viewBox="0 0 30 30">
-          <path d="M22 8l-13 7l13 7"/>
-        </svg>
-      </button>
-      { buttons() }
-      <button onClick={nextProj}>
-        <svg viewBox="0 0 30 30">
-          <path d="M8 8l13 7l-13 7"/>
-        </svg>
-      </button>
-    </div>
+    <>
+      <div className="buttons">
+        <button onClick={prevProj}>
+          <svg viewBox="0 0 30 30">
+            <path d="M22 8l-13 7l13 7"/>
+          </svg>
+        </button>
+        { buttons() }
+        <button onClick={nextProj}>
+          <svg viewBox="0 0 30 30">
+            <path d="M8 8l13 7l-13 7"/>
+          </svg>
+        </button>
+      </div>
+    </>
   )
 }
 

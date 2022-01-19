@@ -1,6 +1,6 @@
 import './PostList.scss';
-import ToC from 'components/ToC';
 import ImageSlider from './ImageSlider';
+import ToC from './ToC';
 
 interface Content {
   tag: string,

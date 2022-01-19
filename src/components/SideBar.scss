@@ -1,8 +1,10 @@
 @import 'base';
 .sideTag {
   &:hover {
+    font-size: 2rem;
     svg {
-      fill: crimson !important;
+      fill: crimson;
+      height: 2rem;
     }
   }
 }
