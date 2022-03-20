@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 import './ImageSlider.scss';
 
 interface Imgs {
-  imgs: string[]
+  imgs: string[];
 }
 
-const ImageSlider = ({imgs}: Imgs) => {
+const ImageSlider = ({ imgs }: Imgs) => {
   const [current, setCurrent] = useState(0);
   const length = imgs.length;
 
@@ -18,27 +18,25 @@ const ImageSlider = ({imgs}: Imgs) => {
   };
 
   return (
-    <div className='slider'>
+    <div className="slider">
       <div>
-        <button onClick={prevImg}>
+        <button type="button" onClick={prevImg}>
           <svg viewBox="0 0 30 30">
-            <path d="M22 8l-13 7l13 7"/>
+            <path d="M22 8l-13 7l13 7" />
           </svg>
         </button>
-        <span>{current + 1} of {length}</span>
-        <button onClick={nextImg}>
+        <span>
+          {current + 1} of {length}
+        </span>
+        <button type="button" onClick={nextImg}>
           <svg viewBox="0 0 30 30">
-            <path d="M8 8l13 7l-13 7"/>
+            <path d="M8 8l13 7l-13 7" />
           </svg>
         </button>
       </div>
-      {imgs.map((img, index) => {
-        return (
-          <div key={index}>
-            {index === current && (<img src={img} alt=""/>)}
-          </div>
-        );
-      })}
+      {imgs.map((img, index) => (
+        <div key={index}>{index === current && <img src={img} alt="" />}</div>
+      ))}
     </div>
   );
 };

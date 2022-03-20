@@ -1,9 +1,5 @@
 import Construction from 'components/Construction';
 
-const Workflow = () => {
-  return (
-    <Construction/>
-  );
-}
+const Workflow = () => <Construction />;
 
 export default Workflow;

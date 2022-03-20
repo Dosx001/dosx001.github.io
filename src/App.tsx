@@ -10,26 +10,24 @@ import Interests from 'pages/Interests';
 import Workflow from 'pages/Workflow';
 import NotFound from 'pages/NotFound';
 
-function App() {
-  return (
-    <Router>
-      <Navbar/>
-      <aside id="rightSide">
-        <SideBar/>
-        <GitHubFeed/>
-      </aside>
-      <div id="content">
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/projects/:route' element={<Projects/>}/>
-          <Route path='/education' element={<Education/>}/>
-          <Route path='/interests' element={<Interests/>}/>
-          <Route path='/workflow' element={<Workflow/>}/>
-          <Route path='*' element={<NotFound/>}/>
-        </Routes>
-      </div>
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <Navbar />
+    <aside id="rightSide">
+      <SideBar />
+      <GitHubFeed />
+    </aside>
+    <div id="content">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:route" element={<Projects />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/interests" element={<Interests />} />
+        <Route path="/workflow" element={<Workflow />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
+  </Router>
+);
 
 export default App;
