@@ -1,4 +1,4 @@
-export const projs = [
+const projs = [
   {
     github: 'https://github.com/Dosx001/dosx001.github.io/',
     title: 'Dosx001.github.io',
@@ -14,7 +14,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-    abandoned: 'words'
+    abandoned: 'words',
   },
   {
     github: 'https://github.com/Dosx001/GI-Artifact-Leveler',
@@ -23,7 +23,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-    abandoned: 'words'
+    abandoned: 'words',
   },
   {
     github: 'https://github.com/Dosx001/GitPrompt',
@@ -48,7 +48,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-    abandoned: 'words'
+    abandoned: 'words',
   },
   {
     github: 'https://github.com/Dosx001/vim-template',
@@ -65,7 +65,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-    abandoned: 'words'
+    abandoned: 'words',
   },
   {
     github: 'https://github.com/Dosx001/anime-calendar',
@@ -82,7 +82,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-    abandoned: 'words'
+    abandoned: 'words',
   },
   {
     github: 'https://github.com/Dosx001/Genshin_Tools',
@@ -91,7 +91,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-    abandoned: 'words'
+    abandoned: 'words',
   },
   {
     github: 'https://github.com/Dosx001/mini-RPG',
@@ -100,5 +100,7 @@ export const projs = [
     what: 'words',
     why: 'words',
     how: 'words',
-  }
-]
+  },
+];
+
+export default projs;

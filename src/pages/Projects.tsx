@@ -1,7 +1,7 @@
 import Project from 'components/Project';
 import ProjectSelector from 'components/ProjectSelector';
 import ToC from 'components/ToC';
-import { projs } from 'const/Projects';
+import projs from 'const/Projects';
 import { useParams } from 'react-router-dom';
 import NotFound from './NotFound';
 

@@ -11,7 +11,7 @@ const Project = ({ title, github, what, why, how, abandoned }: Proj) => (
   <div className="post">
     <h1 id="title">{title}</h1>
     <h2 id="source">Source Code and Documentation</h2>
-    <a href={github}>{github}</a>
+    <p><a href={github}>{github}</a></p>
     <h2 id="what">What</h2>
     <p>{what}</p>
     <h2 id="why">Why</h2>

@@ -43,25 +43,23 @@ const GitHubFeed = () => {
     );
   };
 
-  const eventType = (event: string) => {
-    return {
-      CommitCommentEvent: 'Commit Comment Event',
-      CreateEvent: 'Create Event',
-      DeleteEvent: 'Delete Event',
-      ForkEvent: 'Fork Event',
-      GollumEvent: 'Gollum Event',
-      IssueCommentEvent: 'Issue Comment Event',
-      IssuesEvent: 'Issues Event',
-      MemberEvent: 'Member Event',
-      PublicEvent: 'Public Event',
-      PullRequestEvent: 'PR Event',
-      PullRequestReviewEvent: 'PR Review Event',
-      PullRequestReviewCommentEvent: 'PR Review Comment Event',
-      PushEvent: 'Push Event',
-      ReleaseEvent: 'Release Event',
-      SponsorshipEvent: 'Sponsorship Event',
-      WatchEvent: 'Watch Event',
-    }[event];
+  const eventType: { [key: string]: string } = {
+    CommitCommentEvent: 'Commit Comment Event',
+    CreateEvent: 'Create Event',
+    DeleteEvent: 'Delete Event',
+    ForkEvent: 'Fork Event',
+    GollumEvent: 'Gollum Event',
+    IssueCommentEvent: 'Issue Comment Event',
+    IssuesEvent: 'Issues Event',
+    MemberEvent: 'Member Event',
+    PublicEvent: 'Public Event',
+    PullRequestEvent: 'PR Event',
+    PullRequestReviewEvent: 'PR Review Event',
+    PullRequestReviewCommentEvent: 'PR Review Comment Event',
+    PushEvent: 'Push Event',
+    ReleaseEvent: 'Release Event',
+    SponsorshipEvent: 'Sponsorship Event',
+    WatchEvent: 'Watch Event',
   };
 
   const repoUrl = (event: git) => {
@@ -109,7 +107,7 @@ const GitHubFeed = () => {
       <div id="scroll">
         {events.map((event: git) => (
           <div key={event.id}>
-            <div className="event">{eventType(event.type)}</div>
+            <div className="event">{eventType[event.type]}</div>
             <a href={repoUrl(event)} target="_blank" rel="noreferrer">
               {event.repo.name}
             </a>
