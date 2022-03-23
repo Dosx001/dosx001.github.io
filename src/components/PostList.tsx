@@ -1,62 +1,28 @@
+import { ReactElement } from 'react';
 import './PostList.scss';
-import ImageSlider from './ImageSlider';
 import ToC from './ToC';
-
-interface Content {
-  tag: string;
-  id?: string;
-  inner?: string;
-  title?: string;
-  src?: string;
-  href?: string;
-  className?: string;
-  imgs?: string[];
-}
 
 interface Posts {
   posts: {
     title: string;
     id: string;
-    content: Content[];
+    content: ReactElement[];
   }[];
 }
 
-const PostList = (props: Posts) => {
-  const postIt = (content: Content, index: number) => {
-    switch (content.tag) {
-      case 'a':
-        return (
-          <a key={index} href={content.href}>
-            {content.inner}
-          </a>
-        );
-      case 'p':
-        return <p key={index}>{content.inner}</p>;
-      case 'img':
-        return <img key={index} src={content.src} alt="" />;
-      case 'h2':
-        return (
-          <h2 key={index} id={content.id}>
-            {content.inner}
-          </h2>
-        );
-      case 'slider':
-        return <ImageSlider key={index} imgs={content.imgs!} />;
-      default:
-    }
-    return '';
-  };
+const PostsList = (props: Posts) => {
+  const { posts } = props;
   return (
     <>
       <ToC />
-      {props.posts.map((post, i) => (
-        <div className="post" key={i}>
+      {posts.map((post) => (
+        <div className="post">
           <h1 id={post.id}>{post.title}</h1>
-          {post.content.map((content, j) => postIt(content, j))}
+          {post.content.map((ele) => ele)}
         </div>
       ))}
     </>
   );
 };
 
-export default PostList;
+export default PostsList;

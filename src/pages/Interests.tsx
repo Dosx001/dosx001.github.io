@@ -1,4 +1,4 @@
-import PostsList from 'components/PostsList';
+import PostList from 'components/PostList';
 
 const Interests = () => {
   const posts = [
@@ -28,7 +28,7 @@ const Interests = () => {
       content: [<p>words...</p>],
     },
   ];
-  return <PostsList posts={posts} />;
+  return <PostList posts={posts} />;
 };
 
 export default Interests;

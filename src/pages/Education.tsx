@@ -1,5 +1,5 @@
 import ImageSlider from 'components/ImageSlider';
-import PostsList from 'components/PostsList';
+import PostList from 'components/PostList';
 
 const Education = () => {
   const imgs = {
@@ -89,7 +89,7 @@ const Education = () => {
       ],
     },
   ];
-  return <PostsList posts={posts} />;
+  return <PostList posts={posts} />;
 };
 
 export default Education;

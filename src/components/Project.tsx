@@ -1,10 +1,12 @@
+import { ReactElement } from "react";
+
 interface Proj {
   github: string;
   title: string;
-  what: string;
-  why: string;
-  how: string;
-  abandoned?: string;
+  what: ReactElement;
+  why: ReactElement;
+  how: ReactElement;
+  abandoned?: ReactElement;
 }
 
 const Project = ({ title, github, what, why, how, abandoned }: Proj) => (
@@ -13,18 +15,22 @@ const Project = ({ title, github, what, why, how, abandoned }: Proj) => (
     <h2 id="source">Source Code and Documentation</h2>
     <p><a href={github}>{github}</a></p>
     <h2 id="what">What</h2>
-    <p>{what}</p>
+    {what}
     <h2 id="why">Why</h2>
-    <p>{why}</p>
+    {why}
     <h2 id="how">How</h2>
-    <p>{how}</p>
+    {how}
     {abandoned && (
       <>
         <h2 id="abandoned">Abandoned</h2>
-        <p>{abandoned}</p>
+        {abandoned}
       </>
     )}
   </div>
 );
+
+Project.defaultProps = {
+  abandoned: null
+}
 
 export default Project;

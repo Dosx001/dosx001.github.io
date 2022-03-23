@@ -1,4 +1,4 @@
-import PostsList from 'components/PostsList';
+import PostList from 'components/PostList';
 
 const Home = () => {
   const posts = [
@@ -55,7 +55,7 @@ const Home = () => {
       ],
     },
   ];
-  return <PostsList posts={posts} />;
+  return <PostList posts={posts} />;
 };
 
 export default Home;

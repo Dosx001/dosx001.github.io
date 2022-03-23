@@ -10,31 +10,18 @@ const Projects = () => {
     route: string;
   };
   let index = Number(route) - 1;
-  const props = {
-    index: index,
-    length: projs.length,
-  };
   let proj = projs[index];
-  if (proj) {
-    return (
-      <>
-        <ToC />
-        <ProjectSelector {...props} />
-        <Project {...proj} />
-        <ProjectSelector {...props} />
-      </>
-    );
+  if (proj === undefined) {
+    index = projs.findIndex((pro) => pro.url === route);
+    proj = projs[index];
   }
-  index = projs.findIndex((pro) => pro.url === route);
-  props.index = index;
-  proj = projs[index];
   if (proj) {
     return (
       <>
         <ToC />
-        <ProjectSelector {...props} />
+        <ProjectSelector index={index} length={projs.length} />
         <Project {...proj} />
-        <ProjectSelector {...props} />
+        <ProjectSelector index={index} length={projs.length} />
       </>
     );
   }
