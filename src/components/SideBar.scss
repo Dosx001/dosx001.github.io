@@ -1,13 +1,4 @@
 @import 'base';
-.sideTag {
-  &:hover {
-    font-size: 2rem;
-    svg {
-      fill: crimson;
-      height: 2rem;
-    }
-  }
-}
 #profile {
   @extend %box;
   padding: 1rem;

@@ -62,12 +62,10 @@ const GitHubFeed = () => {
     WatchEvent: 'Watch Event',
   };
 
-  const repoUrl = (event: git) => {
-    if (event.type.includes('Issue')) {
-      return `https://github.com${event.payload.issue.url.substring(28)}`;
-    }
-    return `https://github.com/${event.repo.name}`;
-  };
+  const repoUrl = (event: git) =>
+    event.type.includes('Issue')
+      ? `https://github.com${event.payload.issue.url.substring(28)}`
+      : `https://github.com/${event.repo.name}`;
 
   const fetcher = () => {
     fetch('https://api.github.com/users/Dosx001/events')
