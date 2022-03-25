@@ -9,8 +9,8 @@ const Home = () => {
         <p>
           Welcome to my website, build using React and hosted by GitHub pages.
           This site is relatively new and still a work in progress. I designed
-          this site to introduce myself by showcasing my background and
-          interests. So have a look around and get to know me.
+          this site to introduce myself by showcasing my background, interests,
+          and projects. So have a look around and get to know me.
         </p>,
       ],
     },
@@ -25,11 +25,20 @@ const Home = () => {
           passionate for programming soon thrust into the world of Vim and
           Linux. Since then I have teaching myself various of technologies and
           creating a multitude of projects. You can checkout these projects on
-          my GitHub or here at&nbsp;
-          <a href="https://dosx001.github.io/projects/1">
-            dosx001.github.io/projects
+          my
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Dosx001/"
+          >
+            GitHub
           </a>
-          &nbsp;I am currently looking for work in software related fields.
+          or here at
+          <a href="https://dosx001.github.io/projects/1">
+            dosx001.github.io/projects.
+          </a>
+          I am currently working at BAE Systems as a software engineer and
+          exploring different career paths in software engineering.
         </p>,
       ],
     },
