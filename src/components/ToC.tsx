@@ -29,11 +29,10 @@ const ToC = () => {
   return (
     <aside id="table">
       <span>Table of Contents</span>
-      {headers.map((hder, index) => (
+      {headers.map((hder) => (
         <a
           className={hder.tag === 'H2' ? 'h2-table' : ''}
           href={hder.id}
-          key={index}
         >
           {hder.text}
         </a>

@@ -7,7 +7,7 @@ interface Imgs {
 
 const ImageSlider = ({ imgs }: Imgs) => {
   const [current, setCurrent] = useState(0);
-  const length = imgs.length;
+  const length = Number(imgs.length);
 
   const nextImg = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -35,7 +35,7 @@ const ImageSlider = ({ imgs }: Imgs) => {
         </button>
       </div>
       {imgs.map((img, index) => (
-        <div key={index}>{index === current && <img src={img} alt="" />}</div>
+        <div>{index === current && <img src={img} alt="" />}</div>
       ))}
     </div>
   );
