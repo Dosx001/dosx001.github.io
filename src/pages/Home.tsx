@@ -31,13 +31,15 @@ const Home = () => {
             rel="noreferrer"
             href="https://github.com/Dosx001/"
           >
-            GitHub
+            {' '}
+            GitHub{' '}
           </a>
           or here at
           <a href="https://dosx001.github.io/projects/1">
-            dosx001.github.io/projects.
+            {' '}
+            dosx001.github.io/projects
           </a>
-          I am currently working at BAE Systems as a software engineer and
+          . I am currently working at BAE Systems as a software engineer and
           exploring different career paths in software engineering.
         </p>,
       ],
