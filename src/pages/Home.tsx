@@ -45,6 +45,30 @@ const Home = () => {
       ],
     },
     {
+      title: 'Quotes',
+      id: 'quotes',
+      content: [
+        <p>
+          Here are some of things some people have said to me and I remember
+          them for long time.
+        </p>,
+        <br />,
+        <div className="quote">
+          &quot;You don&apos;t like how a seat belt feels, and you build a whole
+          car with a new seat belt.&quot;
+          <div>-Long time friend</div>
+        </div>,
+        <div className="quote">
+          &quot;How do you know all of this... Oh your a nerd.&quot;
+          <div>-University professor</div>
+        </div>,
+        <div className="quote">
+          &quot;Your a nice asshole.&quot;
+          <div>-Close friend</div>
+        </div>,
+      ],
+    },
+    {
       title: 'GitHub Stats',
       id: 'github-stats',
       content: [

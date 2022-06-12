@@ -6,7 +6,8 @@
   * {
     margin: auto;
   }
-  a, p {
+  a,
+  p {
     width: 85%;
   }
   img {
@@ -16,8 +17,16 @@
     padding-left: 3.5rem;
     margin-bottom: 10px;
   }
-  h2, iframe {
+  h2,
+  iframe {
     width: 90%;
+  }
+  .quote {
+    text-indent: 6rem;
+    padding-bottom: 0.75rem;
+    div {
+      text-indent: 8rem;
+    }
   }
 }
 @media screen and (max-width: 1200px) {
