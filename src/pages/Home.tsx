@@ -59,11 +59,11 @@ const Home = () => {
           <div>-Long time friend</div>
         </div>,
         <div className="quote">
-          &quot;How do you know all of this... Oh your a nerd.&quot;
+          &quot;How do you know all of this... Oh, you&apos;re a nerd.&quot;
           <div>-University professor</div>
         </div>,
         <div className="quote">
-          &quot;Your a nice asshole.&quot;
+          &quot;You&apos;re a nice asshole.&quot;
           <div>-Close friend</div>
         </div>,
       ],
