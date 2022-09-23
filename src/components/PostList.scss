@@ -13,6 +13,14 @@
   img {
     width: 60%;
   }
+  figure {
+    margin-bottom: 1rem;
+    align-content: center;
+    display: grid;
+  }
+  figcaption {
+    font-size: 25px;
+  }
   h1 {
     padding-left: 3.5rem;
     margin-bottom: 10px;
@@ -20,6 +28,16 @@
   h2,
   iframe {
     width: 90%;
+  }
+  iframe {
+    height: 35rem;
+    display: flex;
+    align-content: center;
+    margin-bottom: 1rem;
+  }
+  ul {
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
   }
   table {
     border-spacing: 0;

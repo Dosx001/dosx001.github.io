@@ -16,8 +16,8 @@ const PostsList = (props: Posts) => {
     <>
       <ToC />
       {posts.map((post) => (
-        <div className="post">
-          <h1 id={post.id}>{post.title}</h1>
+        <div key={post.id} className="post">
+          <h1>{post.title}</h1>
           {post.content.map((ele) => ele)}
         </div>
       ))}

@@ -31,6 +31,7 @@ const ToC = () => {
       <span>Table of Contents</span>
       {headers.map((hder) => (
         <a
+          key={hder.id}
           className={hder.tag === 'H2' ? 'h2-table' : ''}
           href={hder.id}
         >
