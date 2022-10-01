@@ -115,6 +115,7 @@ const Workflow = () => {
       id: 'software',
       content: [
         <h2 id="system">System</h2>,
+        <img src="https://i.imgur.com/GsIFw8d.png" alt="" />,
         <table>
           <tr>
             <th>Operating System</th>
@@ -125,65 +126,15 @@ const Workflow = () => {
             </td>
           </tr>
           <tr>
-            <th>Kernel</th>
+            <th>Text Editor</th>
             <td>
-              <a href="https://github.com/torvalds/linux">Stable</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Shell</th>
-            <td>
-              <a href="https://github.com/zsh-users/zsh">zsh</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Terminal</th>
-            <td>
-              <a href="https://github.com/kovidgoyal/kitty">Kitty</a>
+              <a href="https://github.com/neovim/neovim">NeoVim</a>
             </td>
           </tr>
           <tr>
             <th>Terminal Multiplexer</th>
             <td>
               <a href="https://github.com/tmux/tmux">tmux</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Boot Loader</th>
-            <td>
-              <a href="https://www.gnu.org/software/grub/">GNU GRUB</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Window Manager</th>
-            <td>
-              <a href="https://github.com/Airblader/i3">i3-gaps</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Status Bar</th>
-            <td>
-              <a href="https://github.com/polybar/polybar">Polybar</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Application Launcher</th>
-            <td>
-              <a href="https://github.com/davatorium/rofi">rofi</a>
-            </td>
-          </tr>
-          <tr>
-            <th>GTK Theme</th>
-            <td>
-              <a href="https://gitlab.gnome.org/GNOME/gtk/-/tree/gtk-3-24/gtk/theme/Adwaita">
-                Adwaita Dark
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th>Text Editor</th>
-            <td>
-              <a href="https://github.com/neovim/neovim">NeoVim</a>
             </td>
           </tr>
           <tr>
@@ -194,6 +145,11 @@ const Workflow = () => {
           </tr>
         </table>,
         <h2 id="programming">Programming</h2>,
+        <img
+          src="https://i.imgur.com/bThW7ef.png"
+          alt=""
+          style={{ width: '100%' }}
+        />,
         <table>
           <tr>
             <th>Language</th>
@@ -226,6 +182,20 @@ const Workflow = () => {
             <td>&nbsp;</td>
           </tr>
           <tr>
+            <th>Lua</th>
+            <td>
+              <a href="https://github.com/sumneko/lua-language-server">
+                Lua Language Server
+              </a>
+            </td>
+            <td>
+              <a href="https://github.com/Kampfkarren/selene">Selene</a>
+            </td>
+            <td>
+              <a href="https://github.com/JohnnyMorganz/StyLua">StyLua</a>
+            </td>
+          </tr>
+          <tr>
             <th>Python</th>
             <td>
               <a href="https://github.com/microsoft/pyright">Pyright</a>
@@ -237,6 +207,18 @@ const Workflow = () => {
             <td>
               <a href="https://github.com/psf/black">Black</a>,&nbsp;
               <a href="https://github.com/PyCQA/isort">isort</a>
+            </td>
+          </tr>
+          <tr>
+            <th>Rust</th>
+            <td>
+              <a href="https://github.com/rust-lang/rust-analyzer">
+                Rust Analyzer
+              </a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="https://github.com/rust-lang/rustfmt">rustfmt</a>
             </td>
           </tr>
           <tr>
