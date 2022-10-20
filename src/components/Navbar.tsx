@@ -26,9 +26,6 @@ const Navbar = () => {
           Andres Rodriguez Michel
         </Link>
         <div id="nav">
-          <Link onClick={clear} to="/projects/1">
-            Projects
-          </Link>
           <Link onClick={clear} to="/education">
             Education
           </Link>
@@ -48,3 +45,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// <Link onClick={clear} to="/projects/1">
+//   Projects
+// </Link>
